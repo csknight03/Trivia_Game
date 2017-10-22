@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Mouse+Memoirs" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6"><img class="castle" src="assets/images/Disney-Castle.png" alt="Castle"></div>
+        <div class="col-md-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 ">
+            <h1><img class="disneyTriviaImg" src="assets/images/Walt-Disney-Logo.png" alt="Disney">   Trivia</h1></div>
+        <div class="col-md-3"></div>
+    </div>
+    <div>
+        <button class="btn btn-default btn-lg beginGame">BEGIN TRIVIA GAME</button>
+    </div>
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-md-12 countDown">
+                <h1>Count Down: <span id="countDown">30 secs</span></h1>
+            </div>
+        </div>
+        <div class="wrapper2">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Which Disney Character is this?</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6"><img class="charImg" src="assets/images/Mickey-Mouse2.png" alt="Mickey Mouse"></div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <label class="checkbox-inline">
+                        <input type="radio" name="selectedAnswer" value="option1"><span class="radioSpacing" id="inlineCheckbox1">Mickey Mouse</span>
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="radio" name="selectedAnswer" value="option2"><span class="radioSpacing" id="inlineCheckbox2"> Mighty Mouse</span>
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="radio" name="selectedAnswer" value="option3"><span class="radioSpacing" id="inlineCheckbox3"> Jerry Mouse</span>
+                    </label>
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="radio" name="selectedAnswer" value="option4"><span class="radioSpacing" id="inlineCheckbox4"> Fievel Mousekewitz</span>
+                    </label>
+                </div>
+            </div>
+            <button class="btn btn-default btn-lg" id="nextQuestion">NEXT</button>
+        </div>
+    </div>
+    <script src="assets/js/game.js"></script>
+</body>
+
+</html>
